@@ -46,3 +46,12 @@ FILEMD5HASH_EXTERN CFStringRef FileMD5HashCreateWithPath(CFStringRef filePath,
 
 
 #endif
+
+#if defined(__cplusplus)
+#define FILEMD5HASH_EXTERN extern "C"
+#else
+#define FILEMD5HASH_EXTERN extern
+#endif
+
+
+
